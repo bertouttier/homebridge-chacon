@@ -1,0 +1,10 @@
+"accessories": [
+   {
+       "accessory": "chacon",
+       "name": "Huisje",
+       "device": "/dev/ttyUSB0",
+       "baudrate": 9600,
+       "zone": "1",
+       "point": "1"
+   }
+]

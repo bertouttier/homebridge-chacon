@@ -1,0 +1,23 @@
+{
+  "name": "homebridge-chacon",
+  "version": "0.0.1",
+  "description": "MPD plugin for homebridge: https://github.com/nfarina/homebridge",
+  "license": "ISC",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bertouttier/homebridge-chacon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bertouttier/homebridge-chacon/issues"
+  },
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  },
+  "dependencies": {
+    "serialport": "^1.3.0"
+  }
+}
