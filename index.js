@@ -58,4 +58,4 @@ ChaconAccessory.prototype = {
   }
 }
 
-module.exports.accessory = GenericRS232DeviceAccessory;
+module.exports.accessory = ChaconAccessory;

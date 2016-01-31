@@ -1,6 +1,6 @@
 {
   "name": "homebridge-chacon",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "MPD plugin for homebridge: https://github.com/nfarina/homebridge",
   "license": "ISC",
   "keywords": [
