@@ -25,5 +25,5 @@ Includes on/off control. Reading power plug state is not possible.
  * node-serialport: https://github.com/voodootikigod/node-serialport
 
 ### Usage:
- - *Siri, turn <switch> on*
- - *Siri, turn <switch> off*
+ - *Siri, turn Huisje on*
+ - *Siri, turn Huisje off*
