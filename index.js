@@ -24,18 +24,19 @@ function ChaconAccessory(log, config) {
 ChaconAccessory.prototype = {
   setPowerState: function(powerOn, callback) {
     var that        = this;
-    var command     = powerOn ? "{0},{1},1 k\n".format(this.zone, this.point) : "{0},{1},0 k\n".format(this.zone, this.point);
+    var command     = powerOn ? this.zone + "," + this.point + ",1 k" : this.zone + "," + this.point + ",0 k";
     that.sp.open(function (error) {
-      if ( error ) {
+      if (error) {
         that.log('failed to open: '+error);
       } else {
         that.log('open');
-        that.sp.on('data', function(data) {
-          that.log('data received: ' + data);
-        });
-        that.sp.write("1,1,0 k", function(err, results) {
-          that.log('err ' + err);
-          that.log('results ' + results);
+        that.sp.write(command, function(err, results) {
+          if(err){
+            that.log('err ' + err);
+          } else {
+            that.log('results ' + results);
+          }
+          callback(null);
         });
       }
     });
