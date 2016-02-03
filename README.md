@@ -1,6 +1,7 @@
 # homebridge-chacon
 Homebridge plugin to control Chacon power plugs.
 Includes on/off control. Reading power plug state is not possible.
+This project assumes that a Jeelink is connected to your system. The Jeelink takes care of sending the OOK message over 433 MHz RF. Look at my other project https://github.com/bertouttier/chacon
 
 ### Configuration:
 
